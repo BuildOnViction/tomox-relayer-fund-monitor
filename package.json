@@ -1,33 +1,34 @@
 {
-  "name": "tomox-relayer-fund-monitor",
-  "version": "1.0.0",
-  "lockfileVersion": 1,
-  "requires": true,
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "noti_bot": "^1.0.1",
-    "web3": "^1.0.0-beta.26"
-  },
-  "description": "tomox-relayer-fund-monitor",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thanhnguyennguyen/tomox-relayer-fund-monitor.git"
-  },
-  "keywords": [
-    "tomox",
-    "relayer",
-    "fund",
-    "monitor"
-  ],
-  "author": "NguyenNguyen (nguyenbk92@gmail.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thanhnguyennguyen/tomox-relayer-fund-monitor/issues"
-  },
-  "homepage": "https://github.com/thanhnguyennguyen/tomox-relayer-fund-monitor#readme"
+    "name": "tomox-relayer-fund-monitor",
+    "version": "1.0.0",
+    "lockfileVersion": 1,
+    "requires": true,
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "noti_bot": "^1.0.1",
+        "web3": "^1.0.0-beta.26"
+    },
+    "description": "tomox-relayer-fund-monitor",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thanhnguyennguyen/tomox-relayer-fund-monitor.git"
+    },
+    "keywords": [
+        "tomox",
+        "relayer",
+        "fund",
+        "monitor"
+    ],
+    "author": "NguyenNguyen (nguyenbk92@gmail.com)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/thanhnguyennguyen/tomox-relayer-fund-monitor/issues"
+    },
+    "homepage": "https://github.com/thanhnguyennguyen/tomox-relayer-fund-monitor#readme"
 }
