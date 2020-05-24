@@ -28,6 +28,7 @@ const main = async () => {
         let msg = "The following relayers need to deposit more fee:" + alertList.toString()
         notifyTelegram(msg, process.env.TELEGRAM_TOKEN, process.env.TELEGRAM_CHAT)
         notifySlack(msg, process.env.SLACK_HOOK_KEY, process.env.SLACK_CHANNEL, "tomorelayer", "newtomochain")
+        console.log(msg)
     }
 }
 
