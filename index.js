@@ -1,6 +1,6 @@
 const path = require('path')
 require('dotenv').config({
-    path: path.resolve(__dirname, '../.env')
+    path: path.resolve(__dirname, './.env')
 })
 const web3 = require("./web3")
 const relayerContract = require("./contract.js")
