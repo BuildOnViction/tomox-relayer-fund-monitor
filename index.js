@@ -20,14 +20,14 @@ const main = async () => {
             // check if this relayer has resigned
             let resignRequest = await relayerContract.methods.RESIGN_REQUESTS(coinbase).call()
             if (resignRequest == 0) {
-                alertList.push("\nCoinbase: " + coinbase + " Owner: " + relayer[1] + " Available fund: " + web3.utils.fromWei(relayer[2]) + " TOMO")
+                alertList.push("\n\n\nCoinbase: " + coinbase + "\nOwner: " + relayer[1] + "\nAvailable fund: " + web3.utils.fromWei(relayer[2]) + " TOMO")
             }
         }
     }
     if (alertList.length > 0) {
-        let msg = "The following relayers need to deposit more fee:" + alertList.toString()
+        let msg = "The following relayers need to deposit more fee:" + alertList.toString() + "\n cc <@nguyennguyen>"
         notifyTelegram(msg, process.env.TELEGRAM_TOKEN, process.env.TELEGRAM_CHAT)
-        notifySlack(msg, process.env.SLACK_HOOK_KEY, process.env.SLACK_CHANNEL, "tomorelayer", "newtomochain")
+        notifySlack(msg, process.env.SLACK_HOOK_KEY, process.env.SLACK_CHANNEL, process.env.SLACK_BOTNAME, process.env.SLACK_ICON)
         console.log(msg)
     }
 }
